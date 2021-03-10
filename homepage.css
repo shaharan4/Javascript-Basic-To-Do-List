@@ -22,48 +22,81 @@ body {
 .main_header {
   color: red;
   position: relative;
-  top: 5%;
-  left: 5%;
+  margin-top: 3%;
+  margin-left: 5%;
   font-size: 36px;
 }
 
 .main_sub_header {
-  color: silver;
   position: relative;
+  color: silver;
   top: 5%;
   left: 5%;
   font-size: 20px;
 }
 
-.search_bar {
-  position: relative;
-  margin: 10% 10% 5% 5%;
+/* .profile_btn {
+  background-color: white;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+} */
+
+.profile_img {
+  position: absolute;
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 85%;
+  margin-top: -100px;
 }
 
-/* .content_container {
-  overflow: auto;
+/* .profile_content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 } */
+
+/* .profile_img:hover .profile_content {
+  display: block;
+} */
+
+.search_bar {
+  position: relative;
+  margin: 5% 10% 5% 5%;
+}
+
+.search_bar input {
+  padding-right: 55%;
+  padding-bottom: 3px;
+}
 
 .list_container {
   position: relative;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   margin-left: 5%;
   margin-right: 50px;
+  margin-bottom: 5%;
   padding: 3%;
   background: linear-gradient(135deg, rgb(58, 57, 57), black);
   max-width: 800px;
   float: left;
+  box-shadow: 0 4px 20px 0 rgba(241, 237, 237, 0.2),
+    0 6px 20px 0 rgba(48, 45, 45, 0.19);
 }
 
 .add_task_button {
   margin-top: 20px;
   margin-left: 20px;
-  margin-bottom: 20px;
 }
 
 .notes_container {
   position: relative;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   max-width: 800px;
   margin-left: 5%;
   margin-right: 5%;
@@ -72,7 +105,10 @@ body {
   color: white;
   overflow-y: scroll;
   text-align: center;
+  box-shadow: 0 4px 20px 0 rgba(241, 237, 237, 0.2),
+    0 6px 20px 0 rgba(48, 45, 45, 0.19);
 }
+
 .notes_container h3 {
   font-family: "Courier New", Courier, monospace;
 }
