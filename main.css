@@ -44,27 +44,48 @@ body {
   top: 20%;
   left: 40%;
   display: inline-block;
-  border: 2px solid white;
-  padding: 3% 3%;
+  border: 5px solid whitesmoke;
+  padding: 0% 3% 3% 3%;
   border-radius: 10%;
+  background: linear-gradient(135deg, rgb(58, 57, 57), black);
 }
 
 .login_header {
   color: white;
-  padding: 5%;
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
 }
 
 .login_username {
-  padding-top: 5%;
+  padding-bottom: 10%;
   color: white;
   text-align: left;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .login_password {
-  padding-top: 5%;
+  padding-bottom: 10%;
   color: white;
   text-align: left;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.not_member {
+  color: white;
+  text-align: center;
+}
+
+.sign_up_link {
+  color: white;
+}
+
+.forgot_username_password {
+  text-align: center;
+}
+
+.forgot_username_password h4 a {
+  color: white;
 }
 
 .login_submit_button {
