@@ -82,7 +82,10 @@ body {
 
 .search_bar input {
   padding-right: 55%;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
+}
+#search_button{
+  position: relative;
 }
 
 .list_container {
