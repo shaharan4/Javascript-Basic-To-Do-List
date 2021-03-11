@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>getitdone.</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     
@@ -17,7 +18,8 @@
             <h3 class = "main_sub_header">A simple, no-nonsense to-do list.</h3>
             
             <div class="profile">
-                <button class = "profile_btn"><img class = "profile_img" src="/photos/profile.webp" alt="profile"></button>
+                <img class = "profile_img" src="/photos/profile.webp" alt="profile">
+                <button class = "profile_btn btn btn-primary" id = profile_button>Edit Profile</button>
                 <!-- <div class="profile_content">
                     <a href="#">Change Username / Password</a>
                     <a href="#">Change Profile Name</a>
@@ -30,7 +32,7 @@
 
         <div class="search_bar">
             <input type="search" id="query" placeholder="Search">
-            <button>Search</button>
+            <button id="search_button" class="btn btn-light">Search</button>
         </div>
 
         <div class = "content_container">
@@ -40,7 +42,7 @@
                 </form>
     
                 <div class="add_task_button">
-                    <button> + Add Task</button>
+                    <button id="add_task" class="btn btn-success"> + Add Task</button>
                 </div>
     
             </div>
