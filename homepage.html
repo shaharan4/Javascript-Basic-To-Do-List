@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>getitdone.</title>
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <script src="homepage.js"></script>
 </head>
 <body>
     
@@ -52,34 +53,38 @@
                             <input type="text" id = "title" name="title" placeholder="Enter Title...">
                         </div>
                         
-    
-                        <ul class="checklist">
-                            <li>
-                                <input type="checkbox" value = "item1" name="item1" id="item1">
-                                <label for="item1"> 
-                                    list1
-                                    <span class="input"></span>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="checkbox" value = "filler" name="item2" id="item2">
-                                <label for="item2"> 
-                                    list2
-                                    <span class="input"></span>
-                            </li>
-                            <li>
-                                <input type="checkbox" value = "filler" name="item3" id="item3"> 
-                                <label for="item3"> 
-                                    list3
-                                    <span class="input"></span>
-                            </li>
-                        </ul>
+                        
+
+                            
+                            <ul class="checklist">
+                                <li>
+                                    <input type="checkbox" value = "item1" name="item1" id="item1">
+                                    <label for="item1"> 
+                                        list1
+                                        <span class="input"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value = "filler" name="item2" id="item2">
+                                    <label for="item2"> 
+                                        list2
+                                        <span class="input"></span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value = "filler" name="item3" id="item3"> 
+                                    <label for="item3"> 
+                                        list3
+                                        <span class="input"></span>
+                                </li>
+                            </ul>
+                    
+                        
                         
                     </form>
         
                     <div class="add_task_button">
-                        <input type="text" class="add_task_text">
-                        <button id="add_task" class="btn btn-success"> + Add Task</button>
+                        <input type="text" id = "myInput" placeholder="New Task" class="add_task_text">
+                        <button id="add_task" onclick="newElement()" class="btn btn-success"> + Add Task</button>
                     </div>
         
                 </div>
@@ -98,21 +103,21 @@
 
             <div class="new_icons">
                 <div id="new_notes">
-                    <input class= "new_notes_icon" type="image" src="/photos/new_note.png">
+                    <input class= "new_notes_icon" type="image" src="/photos/new_note.png" title="New Notes">
                     <div class="new_note_pop_up">
                         <p>New Notes</p>
                     </div>
                 </div>
 
                 <div id="view_calender">
-                   <input class="view_calender_icon" type="image" src="/photos/view_calender.png">
+                   <input class="view_calender_icon" type="image" src="/photos/view_calender.png" title="View Calender">
                    <div class="view_calender_pop_up">
                         <p>View Calender</p>
                     </div>
                 </div>
 
                 <div id="new_list">
-                    <input class="new_list_icon"type="image" src="/photos/new_list.png">
+                    <input class="new_list_icon"type="image" src="/photos/new_list.png" title="New List">
                     <div class="new_list_pop_up">
                         <p>New List</p>
                     </div>

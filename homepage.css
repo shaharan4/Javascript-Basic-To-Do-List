@@ -26,6 +26,7 @@ header {
   justify-content: space-between;
 }
 
+
 #main_heading {
   display: flex;
   color: red;
@@ -33,19 +34,19 @@ header {
   top: 3%;
   left: 20px;
   font-size: 36px;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 #sub_heading {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: silver;
   top: 5%;
   left: 20px;
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 .profile {
@@ -124,16 +125,34 @@ header {
 
 .title_input #title {
   text-align: center;
+  background: transparent;
+  color: white;
+  padding: 5px;
+}
+
+
+.chekclist{
+  margin: 0;
+  padding: 0;
 }
 
 .checklist li {
   list-style: none;
   padding: 15px 0 0 0;
+  cursor: pointer;
+  list-style: none;
 }
 
-.add_task_button {
+
+.add_task_text{
+  margin-left: 40px;
+  padding-right: 20px;
+}
+#add_task {
   margin-top: 20px;
   margin-left: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 /* ______________________________________________________________ */
 
@@ -146,7 +165,6 @@ header {
   background: linear-gradient(135deg, rgb(58, 57, 57), black);
   padding: 1%;
   color: white;
-  overflow-y: scroll;
   scrollbar-color: gray black;
   text-align: center;
   box-shadow: 0 4px 20px 0 rgba(241, 237, 237, 0.2),
@@ -157,6 +175,10 @@ header {
   font-family: "Courier New", Courier, monospace;
 }
 
+.notes_container textarea{
+  resize: none;
+}
+
 /* ICONS  */
 .new_notes_icon {
   position: fixed;
@@ -165,6 +187,29 @@ header {
   right: 20px;
   width: 50px;
   border: 2px solid gray;
+  display: inline-block;
+}
+
+
+.new_note_pop_up{
+  visibility: hidden;
+  width: 120px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 6px;
+  position: fixed;
+  z-index: 1;
+  bottom: 25%;
+  right: 80px;
+  opacity: .75;
+  transition: 5s;
+}
+
+.new_notes_icon:hover .new_note_pop_up{
+  visibility: visible;
+  opacity: 1;
 }
 
 .view_calender_icon {
@@ -176,6 +221,28 @@ header {
   border: 2px solid gray;
 }
 
+
+.view_calender_pop_up{
+  visibility: hidden;
+  width: 120px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 6px;
+  position: fixed;
+  z-index: 1;
+  bottom: 15%;
+  right: 80px;
+  opacity: .75;
+  transition: 5s;
+}
+
+.view_calender_icon:hover .view_calender_pop_up{
+  visibility: visible;
+  opacity: 1;
+}
+
 .new_list_icon {
   position: fixed;
   background: white;
@@ -185,4 +252,28 @@ header {
   border: 2px solid gray;
   display: inline-block;
 }
-/* _____________________________________________________________ */
+
+
+.new_list_pop_up{
+  visibility: hidden;
+  width: 120px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 6px;
+  position: fixed;
+  z-index: 1;
+  bottom: 5%;
+  right: 80px;
+  opacity: .75;
+  transition: 5s;
+}
+
+.new_list:hover::after .new_list_pop_up{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* _____________________________________________________________
