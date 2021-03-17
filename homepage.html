@@ -12,72 +12,117 @@
     
     <div class="main_container">
 
-
         <header>
-            <h1 class = "main_header">getitdone.</h1>
-            <h3 class = "main_sub_header">A simple, no-nonsense to-do list.</h3>
+            <div class="headings">
+                <h1 id = "main_heading">getitdone.</h1>
+                <h3 id = "sub_heading">A simple, no-nonsense to-do list.</h3>
+            </div>
+
             
             <div class="profile">
-                <img class = "profile_img" src="/photos/profile.webp" alt="profile">
-                <button class = "profile_btn btn btn-primary" id = profile_button>Edit Profile</button>
-                <!-- <div class="profile_content">
-                    <a href="#">Change Username / Password</a>
-                    <a href="#">Change Profile Name</a>
-                </div> -->
+                <div class="profile_img_main">
+                    <img class = "profile_img" src="/photos/profile.webp" alt="profile">
+                </div>
+                
+                <div class="profile_btn_main">
+                    <button class = "profile_btn-primary" id = profile_edit_button>Edit Profile</button>
+
+                </div>
+                
             </div>
-            
-            
         </header>
+
         
 
-        <div class="search_bar">
-            <input type="search" id="query" placeholder="Search">
-            <button id="search_button" class="btn btn-light">Search</button>
-        </div>
 
-        <div class = "content_container">
-            <div class="list_container">
-                <form action="#">
-                    <input type="checkbox" value = "filler" name="" id=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vitae non suscipit consequatur voluptas totam repellat dolorem aliquid, nostrum labore omnis, aspernatur accusamus.
-                </form>
+
+        <main>
+            <div class="search_bar">
+                <input type="search" id="query" placeholder="Search">
+                <button id="search_button" class="btn btn-light">Search</button>
+            </div>
+
+
+
+            <div class="content">
+                <div class="list_container">
+                    <form action="#">
+                        <div class = "title_input">
+                            <label for="title" ></label>
+                            <input type="text" id = "title" name="title" placeholder="Enter Title...">
+                        </div>
+                        
     
-                <div class="add_task_button">
-                    <button id="add_task" class="btn btn-success"> + Add Task</button>
+                        <ul class="checklist">
+                            <li>
+                                <input type="checkbox" value = "item1" name="item1" id="item1">
+                                <label for="item1"> 
+                                    list1
+                                    <span class="input"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value = "filler" name="item2" id="item2">
+                                <label for="item2"> 
+                                    list2
+                                    <span class="input"></span>
+                            </li>
+                            <li>
+                                <input type="checkbox" value = "filler" name="item3" id="item3"> 
+                                <label for="item3"> 
+                                    list3
+                                    <span class="input"></span>
+                            </li>
+                        </ul>
+                        
+                    </form>
+        
+                    <div class="add_task_button">
+                        <input type="text" class="add_task_text">
+                        <button id="add_task" class="btn btn-success"> + Add Task</button>
+                    </div>
+        
                 </div>
     
-            </div>
     
     
-            <div class="notes_container">
-                <h3>Notes</h3>
-                <textarea name="notes_container" id="" cols="50" rows="10" placeholder="Enter Notes..."></textarea>
+    
+                <div class="notes_container">
+                    <h3>Notes</h3>
+                    <textarea name="notes_container" id="" cols="60" rows="10" placeholder="Enter Notes..."></textarea>
+                </div>
             </div>
+            
+
 
 
             <div class="new_icons">
                 <div id="new_notes">
                     <input class= "new_notes_icon" type="image" src="/photos/new_note.png">
+                    <div class="new_note_pop_up">
+                        <p>New Notes</p>
+                    </div>
                 </div>
 
                 <div id="view_calender">
                    <input class="view_calender_icon" type="image" src="/photos/view_calender.png">
-
+                   <div class="view_calender_pop_up">
+                        <p>View Calender</p>
+                    </div>
                 </div>
 
                 <div id="new_list">
                     <input class="new_list_icon"type="image" src="/photos/new_list.png">
-                    <span class="new_list_text"> new list</span>
+                    <div class="new_list_pop_up">
+                        <p>New List</p>
+                    </div>
                 </div>
 
             </div>
-        
-    
-        </div>
-        
-        
 
 
 
+        </main>
 
 
     </div>
