@@ -82,6 +82,7 @@ header {
 /* SEARCH */
 .search_bar {
   position: relative;
+  text-align: center;
   margin-top: 50px;
   left: 20px;
   margin-bottom: 50px;
